@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="plot.html">Plot</a>
+                </li>
+                <li>
+                    <a href="ip.html">Intellectual Property</a>
+                </li>
+                <li>
+                    <a href="security.html">Security</a>
+                </li>
+                <li>
+                    <a href="privacy.html">Privacy</a>
+                </li>
+                <li>
+                    <a href="automation.html">Automation</a>
+                </li>
+                <li>
+                    <a href="conclusion.html">Conclusions</a>
+                </li>
+                <!-- <li><a href="#">Contact</a></li> -->
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                        <h1>Conclusions</h1>
+                        <h4>Compensation</h4>
+                        <p>One comment made throughout the movie by Nedry is that he is under appreciated, especially in terms of monetary compensation, for the amount of work he is doing. He heavily implies that the reason he is willing sell the DNA to the rival corporation is that he isn’t being paid nearly enough. The obvious conclusion to this is that if he were paid more he wouldn’t have compromised the system and tried to sell the DNA. It’s interesting to note that the reason Nedry isn’t being paid “enough” could be one of several issues. Perhaps because programming was such a new and poorly understood field at that time, it was hard for Hammond to understand a fair price for Nedry’s work, which would only be compounded by the fact that he couldn’t exactly tell others what he was working on and get an outside opinion. However, the movie implies that Nedry had made several serious mistakes, which is why he was being underpaid. It’s very likely that the initial velociraptor killing shown at the beginning of the film was a result of Nedry’s locking system failing, and as a consequence of the very serious fallout from the incident his pay was being reduced in some manner. </p>
+
+                        <h4>Safety and Security</h4>
+                        <p>It should be emphasized that the systems fail in the movie because the sole human operator possessed malicious intent without any systems in check to prevent him from doing whatever he wanted. This example of a single rouge programmer being able to severely undermine an operation through the power of computer automation serves to emphasize the importance of having more than one person working on the system and reviewing the code. If even one other person were working alongside Nedry they’d be able to monitor his work and ensure that the code was less likely to contain errors or malicious backdoors. Even if Nedry managed to slip something in there to shut down the park, there would still be someone else on staff capable of understanding and repairing the system so that the systems wouldn’t have had to be rebooted to restore everything back to normal. Essentially the movie shows that the bus factor protects a piece of software not only from unintentional defects and emergency absences, but malicious acts as well.</p>
+                        <p>It should also be noted that there are several fundamental issues with the way the park is disturbingly dependent on computer automation for even the most basic safety features. For example, while it’s nice that the tour vehicles run on an electric track to increase efficiency, there’s no reason they couldn’t have an emergency battery or gas-powered mode so that they can still return to the safety of the visitor’s center during a system failure. Similarly, the fact that you can’t even lock a door without a computer’s help is simply ridiculous. There’s a scene at the end of the movie where the heroes are desperately trying to hold a door shut, but physically cannot bolt it shut until the computer system is back online. As nice as automation is, there ALWAYS needs to be human-operable manual overrides in place for when the computer systems fail. </p>
+
+                        <h4>Networked Communications</h4>
+                        <p>The movie doesn’t really discuss networked communication. The park only has internal communication and potential phone lines to the outside world. From a secrecy standpoint its an effective way of preventing leaks.</p>
+
+                        <p>However, one may argue that being able to communicate with cell phones or whatever would have made things easier since you could just radio in issues, OH SNAP THERE ARE RAPTORS LOOSE, but with the computers down it’s likely nothing would have worked anyway.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

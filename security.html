@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="plot.html">Plot</a>
+                </li>
+                <li>
+                    <a href="ip.html">Intellectual Property</a>
+                </li>
+                <li>
+                    <a href="security.html">Security</a>
+                </li>
+                <li>
+                    <a href="privacy.html">Privacy</a>
+                </li>
+                <li>
+                    <a href="automation.html">Automation</a>
+                </li>
+                <li>
+                    <a href="conclusion.html">Conclusions</a>
+                </li>
+                <!-- <li><a href="#">Contact</a></li> -->
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                        <h1>Security</h1>
+                        <h4>Network Security</h4>
+                        <p>It can easily be argued that the entire plot of Jurassic Park stems from a massive failure of proper computer security. Nedry, the sole computer scientist overseeing the apparently massive Jurassic Park automation system, decides to shutdown the entire system to steal trade secrets and facilitate his escape. Because the systems is not attacked from an outside force it’s hard to say that the security of the system itself was at fault. Rather, the issues seen in the movie are basically a result of the fact that Nedry is the sole person in charge of the system. It could be incredibly secure and robust, but because one man wrote it and never had to submit it for review or share his responsibilities with another programmer he was free to add in as many “backdoors” or blatantly malicious functions as he wanted because nobody else at the park ever read his code, or if the did couldn’t understand it anyway. Nedry is actually shown to be incredibly meticulous in carrying out the system shutdown and covering his tracks so that nobody else could tell what was going on or how to fix it, especially for someone portrayed as otherwise clumsy and prone to laziness and taking the easy way out. When the security guy who seemed to be at least somewhat capable of using the computer tries to access the program and restore the system he is locked out. When he tries to go through the system log to see what commands were run he discovered that Nedry basically turned off key logging and made it impossible for anyone to trace what he did short of searching all 2 million lines to find the function that shut down the system. So in reality the system itself was quite secure, but the programmer, having absolute control as a lone (rogue) individual was able to use his privileged access to deactivate the system and lock it up so that nobody else was able to restore it to its normal functions, which is certainly a form of cybercrime and vandalism. </p>
+                        <p>Also, it should be pointed out that having one massive 2 million line piece of software running the entire park is a terrible and likely very insecure idea, but it’s possible that it’s simply a limitation of the computing technologies of the time.</p>
+
+                        <h4>Reliability</h4>
+                        <p>The massive automated system running the entire park is shown to have several bugs that affect the park touring experience. One of the specific bugs motioned was a relatively minor issue involving the headlights being stuck on, but it is mentioned that Nedry has a long list of bugs to fix before the park opens. Based on his reactions it seems like they’re all minor issues but he just doesn’t care to fix them due to feeling underappreciated or not bothering since he’s going to ruin the park soon anyway.</p>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
