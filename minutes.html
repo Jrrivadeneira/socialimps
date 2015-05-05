@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+               <div id="sidebar-wrapper">
+            <ul id="navi" class="sidebar-nav">
+            </ul>
+            <script>
+            $(document).ready(function() {
+                $('#navi').load('partials/nav.html');
+            });
+            </script>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+                        <h1>Minutes</h1>
+                        <h4>Meeting 1</h4>
+                        <ul>
+                            <li>TJ wrote up most of the content for the site.</li>
+                            <li>Jack got a node server up and created a git repo so the group can update the site and put more content up.</li>
+                            <li>Justin is getting sources together for the bibliography.</li>
+                        </ul>
+                        <h4>Meeting 2</h4>
+                        <ul>
+                            <li>Jack is doing movie makers intent.</li>
+                            <li>pages and navigation needs to be updated.</li>
+                            <li>Part of the conclusions needs its own page.</li>
+                            <li>TJ updated his content and is basically done adding more content.</li>
+                            <li>Justin is doing the technology page.</li>
+                            <li>Discovered Facebook pirate mode.</li>
+                        </ul>
+                        <h4>Meeting 3</h4>
+                        <ul>
+                            <li>Navigation needs some general fixes.</li>
+                            <li>Need a few pages to be created.</li>
+                            <li>Jack is actually posting the meeting minutes to the site now.</li>
+                            <li>Site needs a bibliography page.</li>
+                            <li>We should be deciding which slides we are taking.</li>
+                        </ul>
+                        <h4>Meeting 4</h4>
+                        <ul>
+                            <li>Slides are distributed.</li>
+                            <li>Navigation Fixed.</li>
+                            <li>Pages added.</li>
+                            <li>Bibliography page added.</li>
+                            <li>Cleaned up some sloppy code.</li>
+                            <li>Jack was almost slain by robots.</li>
+                            <li>Disabled Facebook pirate mode because it was getting in the way.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
