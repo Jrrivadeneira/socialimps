@@ -23,7 +23,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
 </head>
 
 <body>
@@ -31,33 +32,14 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="plot.html">Plot</a>
-                </li>
-                <li>
-                    <a href="ip.html">Intellectual Property</a>
-                </li>
-                <li>
-                    <a href="security.html">Security</a>
-                </li>
-                <li>
-                    <a href="privacy.html">Privacy</a>
-                </li>
-                <li>
-                    <a href="automation.html">Automation</a>
-                </li>
-                <li>
-                    <a href="conclusion.html">Conclusions</a>
-                </li>
-                <!-- <li><a href="#">Contact</a></li> -->
+               <div id="sidebar-wrapper">
+            <ul id="navi" class="sidebar-nav">
             </ul>
+            <script>
+            $(document).ready(function() {
+                $('#navi').load('partials/nav.html');
+            });
+            </script>
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -68,7 +50,7 @@
                     <div class="col-lg-6">
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
                         <h1>Social implications of technology in Jurassic Park</h1>
-                        <p>Jurassic Park brings up many important issues in technology especially in the areas of software security and software development practices. Dispite the age of the movie, most of the problems depicted in the movie are still relevant today.</p>
+                        <p>Jurassic Park brings up many important issues in technology, especially in the areas of software security and software development practices. Dispite the age of the movie, most of the problems depicted in the movie are still relevant today.</p>
                         
 
 
